@@ -1,0 +1,88 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Colors from @docs/code.html - Updated Primary for more depth */
+  --color-primary: #1e293b;
+  --color-primary-dim: #0f172a;
+  --color-primary-container: #f1f5f9;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #1e293b;
+  --color-on-primary-fixed: #0f172a;
+  --color-on-primary-fixed-variant: #334155;
+
+  --color-secondary: #a0382d;
+  --color-secondary-dim: #902d22;
+  --color-secondary-container: #ffc3bb;
+  --color-secondary-fixed: #ffc3bb;
+  --color-secondary-fixed-dim: #ffb0a4;
+  --color-on-secondary: #ffefed;
+  --color-on-secondary-container: #85241b;
+  --color-on-secondary-fixed: #6a100a;
+  --color-on-secondary-fixed-variant: #922e23;
+
+  --color-tertiary: #006763;
+  --color-tertiary-dim: #005a56;
+  --color-tertiary-container: #75e7e0;
+  --color-tertiary-fixed: #75e7e0;
+  --color-tertiary-fixed-dim: #66d8d2;
+  --color-on-tertiary: #bdfffa;
+  --color-on-tertiary-container: #00524f;
+  --color-on-tertiary-fixed: #003d3b;
+  --color-on-tertiary-fixed-variant: #005d59;
+
+  --color-surface: #f5f6f7;
+  --color-surface-dim: #d1d5d7;
+  --color-surface-bright: #f5f6f7;
+  --color-surface-variant: #dadddf;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #eff1f2;
+  --color-surface-container: #e6e8ea;
+  --color-surface-container-high: #e0e3e4;
+  --color-surface-container-highest: #dadddf;
+  --color-on-surface: #2c2f30;
+  --color-on-surface-variant: #595c5d;
+
+  --color-background: #f5f6f7;
+  --color-on-background: #2c2f30;
+  --color-outline: #757778;
+  --color-outline-variant: #abadae;
+  
+  --color-error: #b31b25;
+  --color-error-dim: #9f0519;
+  --color-error-container: #fb5151;
+  --color-on-error: #ffefee;
+  --color-on-error-container: #570008;
+
+  /* Typography */
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  --font-label: "Manrope", sans-serif;
+
+  /* Border Radius */
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    @apply font-body text-on-surface bg-background antialiased;
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    @apply inline-block;
+  }
+}
+
+@layer utilities {
+  .editorial-shadow {
+    box-shadow: 0 32px 64px -12px rgba(86, 91, 105, 0.04);
+  }
+  
+  .glass-header {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(24px);
+  }
+}
