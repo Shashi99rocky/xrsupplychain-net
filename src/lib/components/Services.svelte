@@ -23,10 +23,10 @@
     },
     {
       id: '04',
-      title: 'Gas Solutions',
-      description: 'Certified Cream Chargers and CO2 cylinders for commercial hospitality.',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDxsmwX_sjDOzEdcCm5fo-XZ7P9vsapg13QzKJRxMAsjlIsG96MUdArtFi6bbZmgG7KQo5HapKJQgARSVgUEr09dWrEZNRljTX7fes1Y0RQhwLeS-K6VSkZCCsgXJGHZuX0FT0DxfckxHlgY3rDin6P1HX2101KyGRl2k-4zp2WWTvhNs6zY3fjI26avREhprQngRa5_MU0bRB1uzv2jQWIFmKJHj-v3SVDyU7kdJ_urGXW8Zvkoc4LGLasugO1ykXI3swMpDZAfOI',
-      tags: ['Cream Chargers', 'CO2']
+      title: 'Artisanal Coffee',
+      description: 'Single-origin beans and professional brewing equipment for the perfect cup.',
+      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCHX1X_V-7fX_X1X_V-7fX_X1X_V-7fX_X1X_V-7fX_X1X_V-7fX_X1X_V-7fX_X1X_V-7fX_X1X_V-7fX_X1X_V-7fX_X1X_V-7fX_X1X_V-7fX_X1X_V-7f',
+      tags: ['Single Origin', 'Brewing']
     },
     {
       id: '05',
