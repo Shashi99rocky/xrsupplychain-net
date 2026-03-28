@@ -82,7 +82,10 @@
   }
   
   .glass-header {
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(24px);
+    @apply bg-white/95;
+    @media (min-width: 768px) {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(24px);
+    }
   }
 }

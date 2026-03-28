@@ -6,11 +6,27 @@
   let isMobileMenuOpen = $state(false);
 
   onMount(() => {
-    const handleScroll = () => {
-      isScrolled = window.scrollY > 20;
+    // Performant way to detect scroll position using IntersectionObserver
+    const sentinel = document.createElement('div');
+    sentinel.style.position = 'absolute';
+    sentinel.style.top = '0';
+    sentinel.style.height = '20px';
+    sentinel.style.width = '1px';
+    sentinel.style.pointerEvents = 'none';
+    document.body.prepend(sentinel);
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        isScrolled = !entry.isIntersecting;
+      },
+      { threshold: [0] }
+    );
+
+    observer.observe(sentinel);
+    return () => {
+      observer.disconnect();
+      sentinel.remove();
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
   });
 
   const navLinks = [
@@ -33,7 +49,7 @@
     <div class="hidden md:flex items-center gap-8 font-headline font-medium tracking-tight ml-auto">
       {#each navLinks as link}
         <a 
-          class="transition-colors {link.name === 'Home' ? 'text-slate-900 border-b-2 border-slate-500 pb-1' : 'text-slate-500 hover:text-slate-800'}" 
+          class="transition-colors {link.name === 'Home' && !isScrolled ? 'text-slate-900 border-b-2 border-slate-500 pb-1' : 'text-slate-500 hover:text-slate-800'}" 
           href={link.href}
         >
           {link.name}
