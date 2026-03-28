@@ -33,7 +33,10 @@
     <img 
       class="absolute inset-0 w-full h-full object-cover" 
       alt="Wide angle interior of a clean, modern high-tech warehouse with organized shelving and bright natural skylights" 
-      src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4A9WM1N_X8kCSTOlxyiO1ldayDv6_Zqt6Bo81zdDS421YM0ZfUksr8yv-uEDbnTUX9733IkSoxWZUKTyvo6XW6Q5AjMwl2mDCNhO4C9HMOwUwqeS5Uc6UseDCl0WonG-9Vihi6SjNEF9L4O6q2bWvHohfyQwfYIeeS6Tu0uvHf1AVZZdqiXHLmhw3yb3GjbLgP-TLlJcyq0GYfoACxv46F2ajPnhhU9bQ0iC2x340F6rx28dL51m9mASuyR598FnGaMFQdWxpUJs"
+      src="/images/about-warehouse.webp"
+      loading="lazy"
+      width="1000"
+      height="800"
     />
     <div class="absolute inset-0 bg-primary/20 backdrop-grayscale-[0.5]"></div>
   </div>

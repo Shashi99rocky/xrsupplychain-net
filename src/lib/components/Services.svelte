@@ -4,42 +4,42 @@
       id: '01',
       title: 'Confectionery',
       description: "Vidal, Hershey's, and the finest Pick n Mix imports from across the globe.",
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDshnXenGyloWwRahm2qSrZsCISvULWTKuQ-Hs-0Pa_lj3r0vIf2m0m8aR0v4Upcn9Xs0CnVdnSvlJZUsgqs8hst_vjrb9tayPQ1dUx7_hUtInlqnrWR-Kju4kXzk9j7hnoPa4z054u19psCI2BVsDOe247nK9oiTeC6lXjLJtRtgmoiGoXgER0jHTKtnZmqCyH8n_AQVOjM6Tqiu4T2o3ACzfkDIDf5h1DA2pI5GSlafJcCPsRdR4ASSenJhl4YpnRvpIwISm-iwk',
+      image: '/images/cat-confectionery.webp',
       tags: ['Pick n Mix', 'American Candy']
     },
     {
       id: '02',
       title: 'Soft Drinks',
       description: 'Trending imports and exclusive labels that drive retail footfall.',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCwai3BtVZwiuUojQDZFWsd5JvX3CRZ3luEW5PeCqhcBi-VqoegGOBwzzmqfZ9vwVCkIw2KuiNnJEG3h2bwx6qAZsQzFqE7q4vbvAiBTEbDlg3zF67vXeCRAegmYA-gF81vok77wfip2UwYoCE9LMU6LazZemX-2Xy3G2GYpRtWNRVjClooh-pceoZa5new4m5n-I-QvrPKeBZdOAGHvNKL1aIEdEEeoihPlnIvGNSrPuLYqYIJqj93puHzl3dL8F93zc5e07abpNE',
+      image: '/images/cat-soft-drinks.webp',
       tags: ['Imported', 'Trending']
     },
     {
       id: '03',
       title: 'Hotel Chocolate',
       description: 'Authorized wholesale for the iconic Velvetiser systems and pods.',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCNhApoiNEceLsOhiExKjWW7V1R-usYugS3Zz-w_mi59gl2BeaNX1T_O5ITtw1bYlQr98-rsZGuEnXoHxDggqoa-0Z8S96AMih_raosKENSd7ZX1vr570htB6XFLHQS1lNqriCLYnVPekHGYcpWT4cDoDrjrqU5miPLhGvJ4DKFEQUeyOW26c1iwNEwY5VLSOc_mCk-2210Jh-rDCFPYP4_p7epFM5oPNaMhIVyYlFWQlHtgAgBYX-EV60a4ls4AvSUdBe1FKl3iPo',
+      image: '/images/cat-hotel-chocolate.webp',
       tags: ['Premium Systems', 'Luxury Brands']
     },
     {
       id: '04',
       title: 'Artisanal Coffee',
       description: 'Single-origin beans and professional brewing equipment for the perfect cup.',
-      image: 'https://images.pexels.com/photos/33784542/pexels-photo-33784542.jpeg',
+      image: '/images/cat-coffee.webp',
       tags: ['Single Origin', 'Brewing']
     },
     {
       id: '05',
       title: 'Syrups & Sauces',
       description: 'Elevate beverage menus with professional-grade culinary syrups.',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuADzblzAwNq69QZ8DKjh9m-h5ub_UAc_Rmp8iTA4iEe0VqdcQUB-JuXjtWlJ93hUDSoG0avdT-WVslpBR6omInWd-CwtL71UQQOVla6UXQVTJ0Q4_DMkkqeQI5vi_RmaEOxKvar8JkaZ6jmQocrXo4FVpC0OsBmqGWT3pvc36gkveZgjK1rdMxBGY0Wq6cZpNdpcpI164u9LJHadC_2WiiEw6Wrwkcwxgp3r3KaS8SG6Na6uANaY79MAqJ_spsV5lpM_9NvtPbhzls',
+      image: '/images/cat-syrups.webp',
       tags: ['Mixology', 'Gourmet']
     },
     {
       id: '06',
       title: 'Infusion Kits',
       description: 'Innovation in flavor: rapid infusion kits for specialty bars.',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAsd-k6JsGLuXt_mQk6NBYDp7qgsY2GxhKYY_vKOg7PbCMhezdJ7Gggg6MFeaaAs7h-BXAUydxICpWZ-Cx3pIXCBXe3YeXMw3sTnccqFgklmht8YKZhp4esPiXWFbe3LWYHjfOGZEGD-wnOYQ0ASnNcXh1_bP04imY4-PgVU02ptUY5CUo0hhwV_AVhZ8TQkwYgbrNAjMYaSAo3xBVh0sVToCQO832i0cH3YEoePLTRDu1aoKKaFrMPPqCS61TBuYQLOqEjC5ohYp4',
+      image: '/images/cat-infusion.webp',
       tags: ['Rapid Infusion', 'New Arrival']
     }
   ];
@@ -66,6 +66,9 @@
             class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
             alt={category.title} 
             src={category.image}
+            loading="lazy"
+            width="600"
+            height="500"
           />
           <div class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/40 to-transparent p-10 flex flex-col justify-end">
             <div class="flex justify-between items-start mb-6">
