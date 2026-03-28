@@ -4,16 +4,10 @@
 
   let isScrolled = $state(false);
   let isMobileMenuOpen = $state(false);
+  let sentinel: HTMLElement | undefined = $state();
 
   onMount(() => {
-    // Performant way to detect scroll position using IntersectionObserver
-    const sentinel = document.createElement('div');
-    sentinel.style.position = 'absolute';
-    sentinel.style.top = '0';
-    sentinel.style.height = '20px';
-    sentinel.style.width = '1px';
-    sentinel.style.pointerEvents = 'none';
-    document.body.prepend(sentinel);
+    if (!sentinel) return;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -23,10 +17,7 @@
     );
 
     observer.observe(sentinel);
-    return () => {
-      observer.disconnect();
-      sentinel.remove();
-    };
+    return () => observer.disconnect();
   });
 
   const navLinks = [
@@ -37,11 +28,14 @@
   ];
 </script>
 
+<!-- Performance sentinel placed at the top of the page -->
+<div bind:this={sentinel} class="absolute top-0 left-0 w-px h-px pointer-events-none opacity-0" aria-hidden="true"></div>
+
 <header 
-    class="fixed top-0 w-full z-50 transition-all duration-300 ease-in-out {isScrolled ? 'glass-header shadow-sm' : 'bg-white/80'}"
+    class="fixed top-0 w-full z-50 transition-[background-color,box-shadow,backdrop-filter] duration-300 ease-in-out {isScrolled ? 'glass-header shadow-sm' : 'bg-white/80'}"
 >
   <nav class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
-    <div class="text-2xl font-bold tracking-tighter text-slate-800 font-headline">
+    <div class="text-2xl font-bold tracking-tighter text-slate-800 font-headline uppercase">
       XR SUPPLY CHAIN
     </div>
     
@@ -75,7 +69,7 @@
 
   <!-- Mobile Menu Overlay -->
   {#if isMobileMenuOpen}
-    <div class="md:hidden absolute top-full left-0 right-0 bg-white shadow-2xl border-t border-slate-100 p-8 flex flex-col gap-6 animate-in fade-in slide-in-from-top-4 duration-300">
+    <div class="md:hidden absolute top-full left-0 right-0 bg-white shadow-2xl border-t border-slate-100 p-8 flex flex-col gap-6">
       {#each navLinks as link}
         <a 
           href={link.href} 
