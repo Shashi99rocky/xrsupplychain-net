@@ -34,7 +34,7 @@ async function downloadAndOptimize() {
       const buffer = Buffer.from(response.data);
 
       await sharp(buffer)
-        .webp({ quality: 80 })
+        .webp({ quality: 70 })
         .toFile(path.join(outputDir, `${img.name}.webp`));
 
       console.log(`✅ ${img.name}.webp created.`);
