@@ -25,7 +25,7 @@
       id: '04',
       title: 'Artisanal Coffee',
       description: 'Single-origin beans and professional brewing equipment for the perfect cup.',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCHX1X_V-7fX_X1X_V-7fX_X1X_V-7fX_X1X_V-7fX_X1X_V-7fX_X1X_V-7fX_X1X_V-7fX_X1X_V-7fX_X1X_V-7fX_X1X_V-7fX_X1X_V-7fX_X1X_V-7f',
+      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDt8-9m_E_5Xn_Xk_5Xn_Xk_5Xn_Xk_5Xn_Xk_5Xn_Xk_5Xn_Xk_5Xn_Xk_5Xn_Xk_5Xn_Xk_5Xn_Xk_5Xn_Xk_5Xn_Xk_5Xn_Xk_5Xn_Xk_5Xn_Xk_5Xn_Xk',
       tags: ['Single Origin', 'Brewing']
     },
     {
