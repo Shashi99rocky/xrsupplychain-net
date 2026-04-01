@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-  <title>XR Supply Chain | Curated Logistics & Distribution</title>
+  <title>Xr Supply Chain Inc | Curated Logistics & Distribution</title>
   <meta name="description" content="Premier Wholesale Partner. Redefining curated logistics with an editorial approach to supply chain excellence." />
 </svelte:head>
 

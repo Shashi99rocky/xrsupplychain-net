@@ -36,7 +36,7 @@
 >
   <nav class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
     <div class="text-2xl font-bold tracking-tighter text-slate-800 font-headline uppercase">
-      XR SUPPLY CHAIN
+      Xr Supply Chain Inc
     </div>
     
     <!-- Desktop Nav -->

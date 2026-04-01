@@ -2,7 +2,7 @@
   <!-- Brand Story -->
   <div class="w-full md:w-1/2 p-12 md:p-24 flex flex-col justify-center bg-surface-container-low">
     <div class="mb-12">
-      <div class="text-4xl font-bold tracking-tighter text-slate-800 font-headline mb-4 uppercase">XR SUPPLY CHAIN</div>
+      <div class="text-4xl font-bold tracking-tighter text-slate-800 font-headline mb-4 uppercase">Xr Supply Chain Inc</div>
       <div class="h-1 w-20 bg-secondary"></div>
     </div>
     <h2 class="font-headline text-4xl md:text-6xl font-bold tracking-tight mb-8">
@@ -10,7 +10,7 @@
     </h2>
     <div class="space-y-6 text-lg text-on-surface-variant leading-relaxed font-light">
       <p>
-        At XR Supply Chain, we believe that wholesale is more than just logistics—it's about fueling the growth of your business. We act as an extension of your procurement team, seeking out the trends before they hit the mainstream.
+        At Xr Supply Chain Inc, we believe that wholesale is more than just logistics—it's about fueling the growth of your business. We act as an extension of your procurement team, seeking out the trends before they hit the mainstream.
       </p>
       <p>
         Our editorial approach to selection means we only stock products that we believe will drive value, engagement, and repeat customers for your storefront or venue.

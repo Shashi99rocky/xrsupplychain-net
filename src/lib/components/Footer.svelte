@@ -1,9 +1,9 @@
 <footer class="bg-gradient-to-br from-slate-800 to-slate-900 w-full relative">
   <div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8 max-w-screen-2xl mx-auto">
     <div class="flex flex-col items-center md:items-start gap-4 text-center md:text-left">
-      <div class="text-xl font-bold text-white tracking-tighter font-headline uppercase">XR SUPPLY CHAIN</div>
+      <div class="text-xl font-bold text-white tracking-tighter font-headline uppercase">Xr Supply Chain Inc</div>
       <p class="font-body text-sm tracking-wide text-slate-300">
-        High-End Wholesale Solutions for the Culinary & Retail Industry.
+        28 bay 10th st, brooklyn, NY 11228. USA
       </p>
     </div>
     
@@ -17,7 +17,7 @@
     <div class="text-center md:text-right">
       <p class="font-body text-xs tracking-widest text-slate-500 font-bold uppercase mb-2">Company No. 12345678</p>
       <p class="font-body text-sm tracking-wide text-slate-200 opacity-80">
-        © 2026 Epicurean Wholesale. All rights reserved.
+        © 2026 Xr Supply Chain Inc. All rights reserved.
       </p>
     </div>
   </div>

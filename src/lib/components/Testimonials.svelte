@@ -35,7 +35,7 @@
                     
                     <div class="relative z-10">
                         <p class="text-2xl md:text-3xl font-display font-medium leading-relaxed italic mb-10">
-                            "XR Supply Chain didn't just optimize our routes; they transformed our entire distribution philosophy. Their editorial approach to data is revolutionary."
+                            "Xr Supply Chain Inc didn't just optimize our routes; they transformed our entire distribution philosophy. Their editorial approach to data is revolutionary."
                         </p>
                         
                         <div class="flex items-center gap-6">
