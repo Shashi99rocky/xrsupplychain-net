@@ -15,7 +15,7 @@
     </div>
     
     <div class="text-center md:text-right">
-      <p class="font-body text-xs tracking-widest text-slate-500 font-bold uppercase mb-2">Company No. 12345678</p>
+      <p class="font-body text-xs tracking-widest text-slate-500 font-bold uppercase mb-2">Company No. 6033204</p>
       <p class="font-body text-sm tracking-wide text-slate-200 opacity-80">
         © 2026 Xr Supply Chain Inc. All rights reserved.
       </p>
